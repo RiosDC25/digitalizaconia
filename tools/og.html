@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- Dev-time: se captura a 1200x630 para generar assets/img/og.png. No se sube. -->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    background: #070B0C;
+    color: #F2F5F4;
+    font-family: "Inter", sans-serif;
+    position: relative;
+  }
+  .mesh {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(circle 520px at 22% 26%, #12806E 0%, transparent 62%),
+      radial-gradient(circle 460px at 46% 42%, #0A5A78 0%, transparent 60%),
+      radial-gradient(circle 380px at 12% 62%, #3E9B45 0%, transparent 58%),
+      radial-gradient(circle 620px at 88% 92%, #0F2A43 0%, transparent 64%);
+    filter: blur(70px) saturate(140%);
+    opacity: .55;
+  }
+  .inner {
+    position: relative;
+    height: 100%;
+    padding: 74px 80px;
+    display: flex; flex-direction: column; justify-content: space-between;
+  }
+  .top { display: flex; align-items: center; gap: 16px; }
+  .top img { width: 54px; height: 54px; display: block; }
+  .name { font-family: "Instrument Serif", serif; font-size: 32px; letter-spacing: -.01em; }
+  .name span { color: #4FE39B; }
+  h1 {
+    font-family: "Instrument Serif", serif;
+    font-size: 84px; line-height: 1.0; font-weight: 400;
+    letter-spacing: -.03em; max-width: 17ch;
+  }
+  h1 em { font-style: italic; color: #4FE39B; }
+  .foot {
+    display: flex; align-items: center; gap: 28px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 16px; letter-spacing: .13em; text-transform: uppercase;
+    color: #8A9A97;
+    border-top: 1px solid rgba(242,245,244,.14);
+    padding-top: 26px;
+  }
+  .foot b { color: #4FE39B; font-weight: 500; }
+  .dot { width: 6px; height: 6px; border-radius: 50%; background: #4FE39B; }
+</style>
+</head>
+<body>
+  <div class="mesh"></div>
+  <div class="inner">
+    <div class="top">
+      <img src="../assets/img/logo-dcia.webp" alt="">
+      <span class="name">DigitalizaCon<span>IA</span></span>
+    </div>
+
+    <h1>Tu equipo no debería hacer lo que puede hacer una <em>máquina</em>.</h1>
+
+    <div class="foot">
+      <span class="dot"></span>
+      <span><b>Consultoría de IA</b> y automatización</span>
+      <span>Zaragoza · Huesca</span>
+      <span>MVP en 4–8 semanas</span>
+    </div>
+  </div>
+</body>
+</html>

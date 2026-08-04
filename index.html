@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+<meta charset="utf-8">
+<!-- Se quita ya, antes de pintar: si el JS no llega, .no-js deja los reveals visibles -->
+<script>document.documentElement.classList.remove("no-js");</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Consultoría de IA y Automatización | DigitalizaConIA (Zaragoza · Huesca)</title>
+<meta name="description" content="Chatbots, automatizaciones y análisis de datos con IA. Enfoque MVP e integración con WhatsApp, Instagram, Google Sheets y cal.com. Solicita diagnóstico.">
+<meta name="theme-color" content="#070B0C">
+<link rel="canonical" href="https://digitalizaconia.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="DigitalizaConIA">
+<meta property="og:url" content="https://digitalizaconia.com/">
+<meta property="og:title" content="Consultoría de IA y Automatización | DigitalizaConIA (Zaragoza · Huesca)">
+<meta property="og:description" content="Chatbots, automatizaciones y análisis de datos con IA. Enfoque MVP e integración con WhatsApp, Instagram, Google Sheets y cal.com. Solicita diagnóstico.">
+<meta property="og:image" content="https://digitalizaconia.com/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Consultoría de IA y Automatización | DigitalizaConIA (Zaragoza · Huesca)">
+<meta name="twitter:description" content="Chatbots, automatizaciones y análisis de datos con IA. Enfoque MVP e integración con WhatsApp, Instagram, Google Sheets y cal.com. Solicita diagnóstico.">
+<meta name="twitter:image" content="https://digitalizaconia.com/assets/img/og.png">
+
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css?v=20260803">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "DigitalizaConIA",
+  "alternateName": "DCIA",
+  "description": "Consultoría de IA y automatización: chatbots, automatización de procesos y análisis de datos, con enfoque MVP.",
+  "url": "https://digitalizaconia.com/",
+  "logo": "https://digitalizaconia.com/assets/img/logo-dcia.webp",
+  "image": "https://digitalizaconia.com/assets/img/og.png",
+  "email": "dani@digitalizaconia.com",
+  "founder": { "@type": "Person", "name": "Daniel Ordás Montorio" },
+  "address": { "@type": "PostalAddress", "addressRegion": "Aragón", "addressCountry": "ES" },
+  "areaServed": [
+    { "@type": "AdministrativeArea", "name": "Zaragoza" },
+    { "@type": "AdministrativeArea", "name": "Huesca" },
+    { "@type": "Country", "name": "España" }
+  ],
+  "knowsAbout": ["Inteligencia artificial", "Automatización de procesos", "Chatbots", "Análisis de datos", "RGPD"],
+  "priceRange": "€€"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "¿Plazos típicos?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Normalmente se consideran 4–8 semanas para implantar un MVP; no obstante, cada proyecto es único y necesita ser estudiado de forma individual." } },
+    { "@type": "Question", "name": "¿Quién es propietario de los entregables?",
+      "acceptedAnswer": { "@type": "Answer", "text": "El cliente es propietario del código y configuraciones específicas del proyecto. Las plantillas y librerías base forman parte de nuestro stack y se licencian para su uso en el proyecto." } },
+    { "@type": "Question", "name": "¿Coste orientativo?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Desde 200 € (tareas puntuales o automatizaciones simples) hasta 20.000 €+ (proyectos a medida con ML e integraciones complejas). Se define tras el diagnóstico." } },
+    { "@type": "Question", "name": "¿El diagnóstico tiene coste?",
+      "acceptedAnswer": { "@type": "Answer", "text": "La evaluación inicial y la propuesta son gratuitas en la mayoría de los casos. Auditorías avanzadas pueden presupuestarse aparte, siempre previo acuerdo." } }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<!-- Gradiente reactivo al cursor: el efecto firma del sitio -->
+<div class="mesh" data-mesh aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" data-nav>
+  <div class="nav-inner">
+    <a class="brand" href="#top" aria-label="DigitalizaConIA — inicio">
+      <img src="assets/img/logo-dcia.webp" alt="" width="256" height="256" fetchpriority="high">
+      <span class="brand-name">DigitalizaCon<span class="brand-accent">IA</span></span>
+    </a>
+
+    <nav class="nav-links" aria-label="Principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#metodo">Método</a>
+      <a href="#porque">Por qué</a>
+      <a href="#tech">Tech &amp; RGPD</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <a class="btn btn-sm" href="#contacto">Hablemos</a>
+
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav-mobile">
+      <span class="sr-only">Abrir menú</span>
+      <span class="nav-burger" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <div class="nav-mobile" id="nav-mobile" data-nav-mobile hidden>
+    <a href="#servicios">Servicios</a>
+    <a href="#metodo">Método</a>
+    <a href="#porque">Por qué</a>
+    <a href="#tech">Tech &amp; RGPD</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+</header>
+
+<main id="main">
+<span id="top"></span>
+
+<!-- ============================================================ 1. HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="kicker reveal">Consultoría de IA · Zaragoza &amp; Huesca</p>
+
+      <h1 class="hero-title reveal">
+        Tu equipo no debería<br>
+        hacer lo que puede<br>
+        hacer una <em>máquina</em>.
+      </h1>
+
+      <p class="hero-sub reveal">
+        Chatbots, automatización de procesos y análisis de datos.
+        Empezamos por un MVP en 4–8 semanas: primero se demuestra que funciona,
+        después se escala.
+      </p>
+
+      <div class="hero-actions reveal">
+        <a class="btn btn-primary" href="#contacto">Háblanos de tu negocio</a>
+        <a class="btn btn-ghost" href="#servicios">Ver qué hacemos</a>
+      </div>
+
+      <ul class="hero-meta reveal">
+        <li>Sin permanencias</li>
+        <li>Diagnóstico gratuito</li>
+        <li>Cumplimiento RGPD</li>
+      </ul>
+    </div>
+
+    <!-- Las cinco tareas van escritas aquí para que sin JS se lea la lista
+         entera. El JS las sustituye por la versión animada y rotatoria. -->
+    <aside class="taskpanel reveal" data-taskpanel>
+      <header class="tp-head">
+        <span class="tp-label">Un ejemplo, en marcha</span>
+        <span class="tp-live"><span class="tp-dot" aria-hidden="true"></span>simulación</span>
+      </header>
+
+      <ul class="tp-list" data-tp-list>
+        <li class="tp-item is-done"><span class="tp-state" aria-hidden="true"></span><span class="tp-text">Responder a Marta por WhatsApp</span><span class="tp-time">hecho</span></li>
+        <li class="tp-item is-done"><span class="tp-state" aria-hidden="true"></span><span class="tp-text">Apuntar el pedido en la hoja</span><span class="tp-time">hecho</span></li>
+        <li class="tp-item is-done"><span class="tp-state" aria-hidden="true"></span><span class="tp-text">Confirmar la cita del jueves</span><span class="tp-time">hecho</span></li>
+        <li class="tp-item is-done"><span class="tp-state" aria-hidden="true"></span><span class="tp-text">Avisar al equipo del stock bajo</span><span class="tp-time">hecho</span></li>
+        <li class="tp-item is-done"><span class="tp-state" aria-hidden="true"></span><span class="tp-text">Preparar el resumen del día</span><span class="tp-time">hecho</span></li>
+      </ul>
+
+      <footer class="tp-foot">
+        <span>Tareas completadas en este ejemplo</span>
+        <span class="tp-count" data-tp-count>5</span>
+      </footer>
+    </aside>
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ======================================================= 2. MANIFIESTO -->
+<section class="manifesto">
+  <div class="wrap wrap-narrow">
+    <p class="manifesto-text reveal">
+      La mayoría de los proyectos de IA se atascan porque empiezan por la
+      tecnología. Nosotros empezamos por la factura: qué tarea concreta te está
+      costando horas cada semana, cuánto vale quitártela de encima y cómo lo
+      comprobamos en dos meses. <em>Si no sale la cuenta, te lo decimos.</em>
+    </p>
+  </div>
+</section>
+
+<!-- ======================================================== 3. SERVICIOS -->
+<section class="section" id="servicios">
+  <div class="wrap">
+    <header class="section-head">
+      <p class="kicker reveal">01 — Servicios</p>
+      <h2 class="section-title reveal">Tres frentes.<br>Un mismo criterio.</h2>
+    </header>
+
+    <div class="rows">
+      <details class="row reveal" open>
+        <summary class="row-head">
+          <span class="row-num">01</span>
+          <span class="row-title">Chatbots y asistentes</span>
+          <span class="row-icon" aria-hidden="true"></span>
+        </summary>
+        <div class="row-body">
+          <p class="row-lede">
+            Atención al cliente disponible siempre, con la intervención humana
+            reservada a los casos que de verdad la necesitan.
+          </p>
+          <ul class="row-list">
+            <li>Disponibilidad 24/7</li>
+            <li>Integración con WhatsApp e Instagram</li>
+            <li>Cualificación de leads</li>
+            <li>Agendamiento automático</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="row reveal">
+        <summary class="row-head">
+          <span class="row-num">02</span>
+          <span class="row-title">Automatización de procesos</span>
+          <span class="row-icon" aria-hidden="true"></span>
+        </summary>
+        <div class="row-body">
+          <p class="row-lede">
+            Fuera las tareas repetitivas y los errores de copiar y pegar. El
+            trabajo humano se concentra en lo que aporta valor real.
+          </p>
+          <ul class="row-list">
+            <li>Ahorro de horas de trabajo</li>
+            <li>Procesos estandarizados</li>
+            <li>Aplicaciones interconectadas</li>
+            <li>Más productividad por persona</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="row reveal">
+        <summary class="row-head">
+          <span class="row-num">03</span>
+          <span class="row-title">Análisis de datos</span>
+          <span class="row-icon" aria-hidden="true"></span>
+        </summary>
+        <div class="row-body">
+          <p class="row-lede">
+            Modelos predictivos sobre tus propios datos para decidir con
+            antelación, no a toro pasado.
+          </p>
+          <ul class="row-list">
+            <li>Dashboards personalizados</li>
+            <li>Predicción de demanda</li>
+            <li>Scoring automático</li>
+            <li>Alertas en tiempo real</li>
+          </ul>
+
+          <figure class="forecast">
+            <svg class="fc-svg" viewBox="0 0 520 200" role="img"
+                 aria-label="Gráfico de ejemplo: ocho semanas de demanda registrada y una predicción a tres semanas con su margen de error.">
+              <defs>
+                <linearGradient id="fcBar" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%"   stop-color="#12806E"/>
+                  <stop offset="100%" stop-color="#0A5A78"/>
+                </linearGradient>
+              </defs>
+
+              <!-- línea base -->
+              <line class="fc-axis" x1="24" y1="162" x2="496" y2="162"/>
+
+              <!-- ocho semanas registradas -->
+              <g class="fc-bars">
+                <rect class="fc-bar" x="32"  y="112" width="26" height="50"  rx="3"/>
+                <rect class="fc-bar" x="76"  y="96"  width="26" height="66"  rx="3"/>
+                <rect class="fc-bar" x="120" y="104" width="26" height="58"  rx="3"/>
+                <rect class="fc-bar" x="164" y="78"  width="26" height="84"  rx="3"/>
+                <rect class="fc-bar" x="208" y="86"  width="26" height="76"  rx="3"/>
+                <rect class="fc-bar" x="252" y="62"  width="26" height="100" rx="3"/>
+                <rect class="fc-bar" x="296" y="70"  width="26" height="92"  rx="3"/>
+                <rect class="fc-bar" x="340" y="48"  width="26" height="114" rx="3"/>
+              </g>
+
+              <!-- margen de error de la predicción -->
+              <path class="fc-band" d="M 353 48 L 397 30 L 441 20 L 485 8 L 485 62 L 441 60 L 397 56 Z"/>
+              <!-- predicción a tres semanas -->
+              <path class="fc-line" d="M 353 48 L 397 43 L 441 38 L 485 33"/>
+              <circle class="fc-dot" cx="485" cy="33" r="4"/>
+
+              <text class="fc-tick" x="32"  y="180">sem. 1</text>
+              <text class="fc-tick" x="340" y="180">sem. 8</text>
+              <text class="fc-tick fc-tick-end" x="496" y="180">+3</text>
+              <text class="fc-tag" x="485" y="20">predicción</text>
+            </svg>
+            <figcaption>Ejemplo: predicción de demanda a tres semanas, con su margen de error.</figcaption>
+          </figure>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================== 4. MÉTODO -->
+<section class="section section-alt" id="metodo">
+  <div class="wrap">
+    <header class="section-head">
+      <p class="kicker reveal">02 — Método</p>
+      <h2 class="section-title reveal">Sin permanencias.<br>Entregables claros.</h2>
+    </header>
+
+    <ol class="steps" data-steps>
+      <li class="step reveal">
+        <span class="step-num">1</span>
+        <h3 class="step-title">Diagnóstico</h3>
+        <p>Adaptamos objetivos, datos y contexto a tu caso. Gratuito en la mayoría de los casos.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-num">2</span>
+        <h3 class="step-title">MVP funcional</h3>
+        <p>Solución acotada para validar valor y viabilidad. Entre cuatro y ocho semanas.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-num">3</span>
+        <h3 class="step-title">Medición</h3>
+        <p>Iteramos sobre métricas acordadas de antemano, no sobre impresiones.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-num">4</span>
+        <h3 class="step-title">Escalado</h3>
+        <p>Seguridad, documentación y formación para que el sistema no dependa de nosotros.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- =========================================================== 5. CIFRAS -->
+<section class="section stats-section">
+  <div class="wrap">
+    <ul class="stats">
+      <li class="stat reveal">
+        <span class="stat-num"><span data-count-to="8">8</span></span>
+        <span class="stat-label">semanas hasta el MVP</span>
+        <span class="stat-note">4–8 según alcance</span>
+      </li>
+      <li class="stat reveal">
+        <span class="stat-num"><span data-count-to="200">200</span> €</span>
+        <span class="stat-label">punto de entrada</span>
+        <span class="stat-note">automatizaciones simples</span>
+      </li>
+      <li class="stat reveal">
+        <span class="stat-num"><span data-count-to="0">0</span></span>
+        <span class="stat-label">permanencias</span>
+        <span class="stat-note">proyecto a proyecto</span>
+      </li>
+      <li class="stat reveal">
+        <span class="stat-num"><span data-count-to="100">100</span> %</span>
+        <span class="stat-label">del código, tuyo</span>
+        <span class="stat-note">lo específico del proyecto</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ======================================================== 6. POR QUÉ -->
+<section class="section section-alt" id="porque">
+  <div class="wrap">
+    <header class="section-head">
+      <p class="kicker reveal">03 — Por qué DigitalizaConIA</p>
+      <h2 class="section-title reveal">Lo que nos diferencia</h2>
+    </header>
+
+    <ul class="whys">
+      <li class="why reveal">
+        <h3>Enfoque de negocio, no de laboratorio</h3>
+        <p>El MVP existe para que veas resultados pronto y arriesgues poco.</p>
+      </li>
+      <li class="why reveal">
+        <h3>Integraciones reales</h3>
+        <p>WhatsApp, Instagram, Google Sheets, cal.com, n8n y Make. Herramientas que ya usas.</p>
+      </li>
+      <li class="why reveal">
+        <h3>Privacidad y RGPD</h3>
+        <p>Los mínimos datos posibles, alojamiento seguro y NDA disponible desde el primer día.</p>
+      </li>
+      <li class="why reveal">
+        <h3>Acompañamiento directo</h3>
+        <p>Hablas con quien hace el trabajo. Documentación y tiempos claros, sin intermediarios.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================================================== 7. TECH & RGPD -->
+<section class="section" id="tech">
+  <div class="wrap">
+    <header class="section-head">
+      <p class="kicker reveal">04 — Tech &amp; RGPD</p>
+      <h2 class="section-title reveal">Tecnología actual,<br>normativa europea.</h2>
+    </header>
+
+    <!-- Diagrama: cómo se ve por dentro una automatización real -->
+    <figure class="flow reveal">
+      <figcaption class="flow-cap">Anatomía de una automatización típica</figcaption>
+      <svg class="flow-svg" viewBox="0 0 1000 190" role="img"
+           aria-label="Diagrama de flujo: un mensaje entra por WhatsApp o Instagram, pasa por n8n o Make, se procesa con un modelo de lenguaje y termina registrado en Google Sheets o en una base de datos europea y agendado en cal.com.">
+        <defs>
+          <!-- userSpaceOnUse: la caja de un trazo horizontal tiene altura 0 y el
+               gradiente en coordenadas relativas degenera (línea invisible) -->
+          <linearGradient id="flowStroke" gradientUnits="userSpaceOnUse" x1="92" y1="0" x2="908" y2="0">
+            <stop offset="0%"   stop-color="#0A5A78"/>
+            <stop offset="50%"  stop-color="#12806E"/>
+            <stop offset="100%" stop-color="#4FE39B"/>
+          </linearGradient>
+        </defs>
+
+        <path class="flow-line" d="M 92 95 H 908" stroke="url(#flowStroke)" fill="none" stroke-width="1.5"/>
+        <path class="flow-pulse" d="M 92 95 H 908" stroke="#4FE39B" fill="none" stroke-width="2"
+              stroke-dasharray="8 992" stroke-linecap="round"/>
+
+        <g class="flow-node" transform="translate(92,95)">
+          <circle r="7"/><text y="-26">Entrada</text><text class="flow-sub" y="34">WhatsApp · Instagram</text>
+        </g>
+        <g class="flow-node" transform="translate(296,95)">
+          <circle r="7"/><text y="-26">Orquestación</text><text class="flow-sub" y="34">n8n · Make</text>
+        </g>
+        <g class="flow-node" transform="translate(500,95)">
+          <circle r="7"/><text y="-26">Razonamiento</text><text class="flow-sub" y="34">OpenAI · Anthropic</text>
+        </g>
+        <g class="flow-node" transform="translate(704,95)">
+          <circle r="7"/><text y="-26">Registro</text><text class="flow-sub" y="34">Sheets · Neon · Supabase</text>
+        </g>
+        <g class="flow-node flow-node-end" transform="translate(908,95)">
+          <circle r="7"/><text y="-26">Acción</text><text class="flow-sub" y="34">cal.com · aviso al equipo</text>
+        </g>
+      </svg>
+    </figure>
+
+    <div class="tech-grid">
+      <div class="tech-stack reveal">
+        <h3 class="minor-title">Stack</h3>
+        <ul class="stack-list">
+          <li><span class="stack-name">OpenAI / Anthropic</span><span class="stack-role">LLMs</span></li>
+          <li><span class="stack-name">Google Sheets</span><span class="stack-role">datos</span></li>
+          <li><span class="stack-name">cal.com</span><span class="stack-role">calendarios</span></li>
+          <li><span class="stack-name">n8n / Make</span><span class="stack-role">automatización</span></li>
+          <li><span class="stack-name">WhatsApp / Instagram</span><span class="stack-role">mensajería</span></li>
+          <li><span class="stack-name">Neon / Supabase</span><span class="stack-role">bases de datos EU</span></li>
+        </ul>
+      </div>
+
+      <div class="tech-privacy reveal">
+        <h3 class="minor-title">Privacidad y cumplimiento</h3>
+        <dl class="privacy-list">
+          <dt>Minimización de datos</dt>
+          <dd>Solo procesamos lo necesario.</dd>
+          <dt>Alojamiento EU</dt>
+          <dd>Servidores en Europa cuando es posible.</dd>
+          <dt>Auditoría RGPD</dt>
+          <dd>Documentación completa de tratamiento.</dd>
+          <dt>NDA disponible</dt>
+          <dd>Protección de propiedad intelectual.</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================== 8. FAQ -->
+<section class="section section-alt" id="faq">
+  <div class="wrap wrap-narrow">
+    <header class="section-head">
+      <p class="kicker reveal">05 — Preguntas frecuentes</p>
+      <h2 class="section-title reveal">Lo que suelen preguntarnos</h2>
+    </header>
+
+    <div class="faq">
+      <details class="qa reveal" open>
+        <summary><span>¿Plazos típicos?</span><span class="row-icon" aria-hidden="true"></span></summary>
+        <div class="qa-body"><p>Normalmente se consideran 4–8 semanas para implantar un MVP; no obstante, cada proyecto es único y necesita ser estudiado de forma individual.</p></div>
+      </details>
+      <details class="qa reveal">
+        <summary><span>¿Quién es propietario de los entregables?</span><span class="row-icon" aria-hidden="true"></span></summary>
+        <div class="qa-body"><p>El cliente es propietario del código y configuraciones específicas del proyecto. Las plantillas y librerías base forman parte de nuestro stack y se licencian para su uso en el proyecto.</p></div>
+      </details>
+      <details class="qa reveal">
+        <summary><span>¿Coste orientativo?</span><span class="row-icon" aria-hidden="true"></span></summary>
+        <div class="qa-body"><p>Desde 200 € (tareas puntuales o automatizaciones simples) hasta 20.000 €+ (proyectos a medida con ML e integraciones complejas). Se define tras el diagnóstico.</p></div>
+      </details>
+      <details class="qa reveal">
+        <summary><span>¿El diagnóstico tiene coste?</span><span class="row-icon" aria-hidden="true"></span></summary>
+        <div class="qa-body"><p>La evaluación inicial y la propuesta son gratuitas en la mayoría de los casos. Auditorías avanzadas pueden presupuestarse aparte, siempre previo acuerdo.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================= 9. CONTACTO -->
+<section class="section contact" id="contacto">
+  <div class="wrap">
+    <header class="section-head">
+      <p class="kicker reveal">06 — Contacto</p>
+      <h2 class="section-title reveal">Cuéntanos qué tarea<br>te está comiendo la semana.</h2>
+    </header>
+
+    <div class="contact-grid">
+      <div class="contact-aside reveal">
+        <a class="contact-email" href="mailto:dani@digitalizaconia.com">dani@digitalizaconia.com</a>
+        <p class="contact-note">
+          Respondemos con una primera lectura del caso y, si tiene sentido,
+          una propuesta acotada. Sin compromiso y sin permanencia.
+        </p>
+        <dl class="contact-facts">
+          <dt>Dónde</dt><dd>Zaragoza · Huesca, España</dd>
+          <dt>Quién</dt><dd>Daniel Ordás Montorio</dd>
+        </dl>
+      </div>
+
+      <form class="form reveal" data-form novalidate>
+        <div class="field">
+          <label for="f-nombre">Nombre</label>
+          <input id="f-nombre" name="nombre" type="text" autocomplete="name" required>
+          <p class="field-error" data-error-for="nombre"></p>
+        </div>
+
+        <div class="field-pair">
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
+            <p class="field-error" data-error-for="email"></p>
+          </div>
+          <div class="field">
+            <label for="f-telefono">Teléfono <span class="opt">(opcional)</span></label>
+            <input id="f-telefono" name="telefono" type="tel" autocomplete="tel">
+            <p class="field-error" data-error-for="telefono"></p>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="f-web">Web <span class="opt">(opcional)</span></label>
+          <input id="f-web" name="web" type="url" placeholder="https://tudominio.com">
+          <p class="field-error" data-error-for="web"></p>
+        </div>
+
+        <div class="field">
+          <label for="f-mensaje">Mensaje</label>
+          <textarea id="f-mensaje" name="mensaje" rows="5" required
+                    placeholder="Qué haces, qué tarea te gustaría quitarte de encima y para cuándo."></textarea>
+          <p class="field-error" data-error-for="mensaje"></p>
+        </div>
+
+        <div class="field field-check">
+          <label class="check">
+            <input type="checkbox" name="consentimiento" required>
+            <span>Acepto el tratamiento de mis datos según el
+              <a href="aviso-legal.html">Aviso Legal</a> y la
+              <a href="privacidad.html">Política de Privacidad</a>.</span>
+          </label>
+          <p class="field-error" data-error-for="consentimiento"></p>
+        </div>
+
+        <button class="btn btn-primary btn-submit" type="submit">
+          <span data-submit-label>Enviar mensaje</span>
+        </button>
+
+        <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <img src="assets/img/logo-dcia.webp" alt="" width="256" height="256" loading="lazy">
+      <span>DigitalizaCon<span class="brand-accent">IA</span></span>
+    </div>
+    <nav class="footer-links" aria-label="Pie de página">
+      <a href="mailto:dani@digitalizaconia.com">dani@digitalizaconia.com</a>
+      <a href="aviso-legal.html">Aviso legal</a>
+      <a href="privacidad.html">Política de privacidad</a>
+    </nav>
+    <p class="footer-copy">© 2026 DigitalizaConIA · Zaragoza &amp; Huesca</p>
+  </div>
+</footer>
+
+<script defer src="lib/manifest.js?v=20260803"></script>
+<script defer src="main.js?v=20260803"></script>
+</body>
+</html>
