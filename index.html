@@ -7,7 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Consultoría de IA y Automatización | DigitalizaConIA (Zaragoza · Huesca)</title>
 <meta name="description" content="Chatbots, automatizaciones y análisis de datos con IA. Enfoque MVP e integración con WhatsApp, Instagram, Google Sheets y cal.com. Solicita diagnóstico.">
-<meta name="theme-color" content="#070B0C">
+<meta name="theme-color" content="#FBFCFC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#070B0C" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://digitalizaconia.com/">
 
 <meta property="og:type" content="website">
@@ -29,8 +30,8 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="styles.css?v=20260803">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css?v=20260827">
 
 <script type="application/ld+json">
 {
@@ -54,22 +55,6 @@
   "priceRange": "€€"
 }
 </script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    { "@type": "Question", "name": "¿Plazos típicos?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Normalmente se consideran 4–8 semanas para implantar un MVP; no obstante, cada proyecto es único y necesita ser estudiado de forma individual." } },
-    { "@type": "Question", "name": "¿Quién es propietario de los entregables?",
-      "acceptedAnswer": { "@type": "Answer", "text": "El cliente es propietario del código y configuraciones específicas del proyecto. Las plantillas y librerías base forman parte de nuestro stack y se licencian para su uso en el proyecto." } },
-    { "@type": "Question", "name": "¿Coste orientativo?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Desde 200 € (tareas puntuales o automatizaciones simples) hasta 20.000 €+ (proyectos a medida con ML e integraciones complejas). Se define tras el diagnóstico." } },
-    { "@type": "Question", "name": "¿El diagnóstico tiene coste?",
-      "acceptedAnswer": { "@type": "Answer", "text": "La evaluación inicial y la propuesta son gratuitas en la mayoría de los casos. Auditorías avanzadas pueden presupuestarse aparte, siempre previo acuerdo." } }
-  ]
-}
-</script>
 </head>
 <body>
 
@@ -87,14 +72,13 @@
     </a>
 
     <nav class="nav-links" aria-label="Principal">
-      <a href="#servicios">Servicios</a>
-      <a href="#metodo">Método</a>
-      <a href="#porque">Por qué</a>
-      <a href="#tech">Tech &amp; RGPD</a>
-      <a href="#faq">FAQ</a>
+      <a href="chatbots.html">Chatbots</a>
+      <a href="automatizacion.html">Automatización</a>
+      <a href="analisis-de-datos.html">Datos</a>
+      <a href="metodo.html">Método</a>
     </nav>
 
-    <a class="btn btn-sm" href="#contacto">Hablemos</a>
+    <a class="btn btn-sm btn-primary" href="#contacto">Hablemos</a>
 
     <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav-mobile">
       <span class="sr-only">Abrir menú</span>
@@ -103,11 +87,10 @@
   </div>
 
   <div class="nav-mobile" id="nav-mobile" data-nav-mobile hidden>
-    <a href="#servicios">Servicios</a>
-    <a href="#metodo">Método</a>
-    <a href="#porque">Por qué</a>
-    <a href="#tech">Tech &amp; RGPD</a>
-    <a href="#faq">FAQ</a>
+    <a href="chatbots.html">Chatbots</a>
+    <a href="automatizacion.html">Automatización</a>
+    <a href="analisis-de-datos.html">Datos</a>
+    <a href="metodo.html">Método</a>
     <a href="#contacto">Contacto</a>
   </div>
 </header>
@@ -129,7 +112,7 @@
 
       <p class="hero-sub reveal">
         Chatbots, automatización de procesos y análisis de datos.
-        Empezamos por un MVP en 4–8 semanas: primero se demuestra que funciona,
+        Empezamos por un MVP en 2–4 semanas: primero se demuestra que funciona,
         después se escala.
       </p>
 
@@ -191,105 +174,27 @@
       <h2 class="section-title reveal">Tres frentes.<br>Un mismo criterio.</h2>
     </header>
 
-    <div class="rows">
-      <details class="row reveal" open>
-        <summary class="row-head">
-          <span class="row-num">01</span>
-          <span class="row-title">Chatbots y asistentes</span>
-          <span class="row-icon" aria-hidden="true"></span>
-        </summary>
-        <div class="row-body">
-          <p class="row-lede">
-            Atención al cliente disponible siempre, con la intervención humana
-            reservada a los casos que de verdad la necesitan.
-          </p>
-          <ul class="row-list">
-            <li>Disponibilidad 24/7</li>
-            <li>Integración con WhatsApp e Instagram</li>
-            <li>Cualificación de leads</li>
-            <li>Agendamiento automático</li>
-          </ul>
-        </div>
-      </details>
+    <div class="svc-grid">
+      <a class="svc reveal" href="chatbots.html">
+        <span class="svc-num">01</span>
+        <h3 class="svc-title">Chatbots y asistentes</h3>
+        <p>Atención disponible siempre, con la intervención humana reservada a los casos que de verdad la necesitan.</p>
+        <span class="svc-more">Ver el servicio</span>
+      </a>
 
-      <details class="row reveal">
-        <summary class="row-head">
-          <span class="row-num">02</span>
-          <span class="row-title">Automatización de procesos</span>
-          <span class="row-icon" aria-hidden="true"></span>
-        </summary>
-        <div class="row-body">
-          <p class="row-lede">
-            Fuera las tareas repetitivas y los errores de copiar y pegar. El
-            trabajo humano se concentra en lo que aporta valor real.
-          </p>
-          <ul class="row-list">
-            <li>Ahorro de horas de trabajo</li>
-            <li>Procesos estandarizados</li>
-            <li>Aplicaciones interconectadas</li>
-            <li>Más productividad por persona</li>
-          </ul>
-        </div>
-      </details>
+      <a class="svc reveal" href="automatizacion.html">
+        <span class="svc-num">02</span>
+        <h3 class="svc-title">Automatización de procesos</h3>
+        <p>Fuera las tareas repetitivas y los errores de copiar y pegar. El trabajo humano va a lo que aporta valor.</p>
+        <span class="svc-more">Ver el servicio</span>
+      </a>
 
-      <details class="row reveal">
-        <summary class="row-head">
-          <span class="row-num">03</span>
-          <span class="row-title">Análisis de datos</span>
-          <span class="row-icon" aria-hidden="true"></span>
-        </summary>
-        <div class="row-body">
-          <p class="row-lede">
-            Modelos predictivos sobre tus propios datos para decidir con
-            antelación, no a toro pasado.
-          </p>
-          <ul class="row-list">
-            <li>Dashboards personalizados</li>
-            <li>Predicción de demanda</li>
-            <li>Scoring automático</li>
-            <li>Alertas en tiempo real</li>
-          </ul>
-
-          <figure class="forecast">
-            <svg class="fc-svg" viewBox="0 0 520 200" role="img"
-                 aria-label="Gráfico de ejemplo: ocho semanas de demanda registrada y una predicción a tres semanas con su margen de error.">
-              <defs>
-                <linearGradient id="fcBar" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%"   stop-color="#12806E"/>
-                  <stop offset="100%" stop-color="#0A5A78"/>
-                </linearGradient>
-              </defs>
-
-              <!-- línea base -->
-              <line class="fc-axis" x1="24" y1="162" x2="496" y2="162"/>
-
-              <!-- ocho semanas registradas -->
-              <g class="fc-bars">
-                <rect class="fc-bar" x="32"  y="112" width="26" height="50"  rx="3"/>
-                <rect class="fc-bar" x="76"  y="96"  width="26" height="66"  rx="3"/>
-                <rect class="fc-bar" x="120" y="104" width="26" height="58"  rx="3"/>
-                <rect class="fc-bar" x="164" y="78"  width="26" height="84"  rx="3"/>
-                <rect class="fc-bar" x="208" y="86"  width="26" height="76"  rx="3"/>
-                <rect class="fc-bar" x="252" y="62"  width="26" height="100" rx="3"/>
-                <rect class="fc-bar" x="296" y="70"  width="26" height="92"  rx="3"/>
-                <rect class="fc-bar" x="340" y="48"  width="26" height="114" rx="3"/>
-              </g>
-
-              <!-- margen de error de la predicción -->
-              <path class="fc-band" d="M 353 48 L 397 30 L 441 20 L 485 8 L 485 62 L 441 60 L 397 56 Z"/>
-              <!-- predicción a tres semanas -->
-              <path class="fc-line" d="M 353 48 L 397 43 L 441 38 L 485 33"/>
-              <circle class="fc-dot" cx="485" cy="33" r="4"/>
-
-              <text class="fc-tick" x="32"  y="180">sem. 1</text>
-              <text class="fc-tick" x="340" y="180">sem. 8</text>
-              <text class="fc-tick fc-tick-end" x="496" y="180">+3</text>
-              <text class="fc-tag" x="485" y="20">predicción</text>
-            </svg>
-            <figcaption>Ejemplo: predicción de demanda a tres semanas, con su margen de error.</figcaption>
-          </figure>
-        </div>
-      </details>
+      <a class="svc reveal" href="analisis-de-datos.html">
+        <span class="svc-num">03</span>
+        <h3 class="svc-title">Análisis de datos</h3>
+        <p>Modelos predictivos sobre tus propios datos para decidir con antelación, no a toro pasado.</p>
+        <span class="svc-more">Ver el servicio</span>
+      </a>
     </div>
   </div>
 </section>
@@ -300,6 +205,8 @@
     <header class="section-head">
       <p class="kicker reveal">02 — Método</p>
       <h2 class="section-title reveal">Sin permanencias.<br>Entregables claros.</h2>
+      <p class="section-sub reveal">Cuatro pasos, y en cada uno sabes qué recibes y cuándo.
+        <a href="metodo.html" class="inline-link">Ver el método completo, el stack y el RGPD →</a></p>
     </header>
 
     <ol class="steps" data-steps>
@@ -311,7 +218,7 @@
       <li class="step reveal">
         <span class="step-num">2</span>
         <h3 class="step-title">MVP funcional</h3>
-        <p>Solución acotada para validar valor y viabilidad. Entre cuatro y ocho semanas.</p>
+        <p>Solución acotada para validar valor y viabilidad. Entre dos y cuatro semanas.</p>
       </li>
       <li class="step reveal">
         <span class="step-num">3</span>
@@ -332,9 +239,9 @@
   <div class="wrap">
     <ul class="stats">
       <li class="stat reveal">
-        <span class="stat-num"><span data-count-to="8">8</span></span>
+        <span class="stat-num"><span data-count-to="4">4</span></span>
         <span class="stat-label">semanas hasta el MVP</span>
-        <span class="stat-note">4–8 según alcance</span>
+        <span class="stat-note">2–4 según alcance</span>
       </li>
       <li class="stat reveal">
         <span class="stat-num"><span data-count-to="200">200</span> €</span>
@@ -381,110 +288,6 @@
         <p>Hablas con quien hace el trabajo. Documentación y tiempos claros, sin intermediarios.</p>
       </li>
     </ul>
-  </div>
-</section>
-
-<!-- ===================================================== 7. TECH & RGPD -->
-<section class="section" id="tech">
-  <div class="wrap">
-    <header class="section-head">
-      <p class="kicker reveal">04 — Tech &amp; RGPD</p>
-      <h2 class="section-title reveal">Tecnología actual,<br>normativa europea.</h2>
-    </header>
-
-    <!-- Diagrama: cómo se ve por dentro una automatización real -->
-    <figure class="flow reveal">
-      <figcaption class="flow-cap">Anatomía de una automatización típica</figcaption>
-      <svg class="flow-svg" viewBox="0 0 1000 190" role="img"
-           aria-label="Diagrama de flujo: un mensaje entra por WhatsApp o Instagram, pasa por n8n o Make, se procesa con un modelo de lenguaje y termina registrado en Google Sheets o en una base de datos europea y agendado en cal.com.">
-        <defs>
-          <!-- userSpaceOnUse: la caja de un trazo horizontal tiene altura 0 y el
-               gradiente en coordenadas relativas degenera (línea invisible) -->
-          <linearGradient id="flowStroke" gradientUnits="userSpaceOnUse" x1="92" y1="0" x2="908" y2="0">
-            <stop offset="0%"   stop-color="#0A5A78"/>
-            <stop offset="50%"  stop-color="#12806E"/>
-            <stop offset="100%" stop-color="#4FE39B"/>
-          </linearGradient>
-        </defs>
-
-        <path class="flow-line" d="M 92 95 H 908" stroke="url(#flowStroke)" fill="none" stroke-width="1.5"/>
-        <path class="flow-pulse" d="M 92 95 H 908" stroke="#4FE39B" fill="none" stroke-width="2"
-              stroke-dasharray="8 992" stroke-linecap="round"/>
-
-        <g class="flow-node" transform="translate(92,95)">
-          <circle r="7"/><text y="-26">Entrada</text><text class="flow-sub" y="34">WhatsApp · Instagram</text>
-        </g>
-        <g class="flow-node" transform="translate(296,95)">
-          <circle r="7"/><text y="-26">Orquestación</text><text class="flow-sub" y="34">n8n · Make</text>
-        </g>
-        <g class="flow-node" transform="translate(500,95)">
-          <circle r="7"/><text y="-26">Razonamiento</text><text class="flow-sub" y="34">OpenAI · Anthropic</text>
-        </g>
-        <g class="flow-node" transform="translate(704,95)">
-          <circle r="7"/><text y="-26">Registro</text><text class="flow-sub" y="34">Sheets · Neon · Supabase</text>
-        </g>
-        <g class="flow-node flow-node-end" transform="translate(908,95)">
-          <circle r="7"/><text y="-26">Acción</text><text class="flow-sub" y="34">cal.com · aviso al equipo</text>
-        </g>
-      </svg>
-    </figure>
-
-    <div class="tech-grid">
-      <div class="tech-stack reveal">
-        <h3 class="minor-title">Stack</h3>
-        <ul class="stack-list">
-          <li><span class="stack-name">OpenAI / Anthropic</span><span class="stack-role">LLMs</span></li>
-          <li><span class="stack-name">Google Sheets</span><span class="stack-role">datos</span></li>
-          <li><span class="stack-name">cal.com</span><span class="stack-role">calendarios</span></li>
-          <li><span class="stack-name">n8n / Make</span><span class="stack-role">automatización</span></li>
-          <li><span class="stack-name">WhatsApp / Instagram</span><span class="stack-role">mensajería</span></li>
-          <li><span class="stack-name">Neon / Supabase</span><span class="stack-role">bases de datos EU</span></li>
-        </ul>
-      </div>
-
-      <div class="tech-privacy reveal">
-        <h3 class="minor-title">Privacidad y cumplimiento</h3>
-        <dl class="privacy-list">
-          <dt>Minimización de datos</dt>
-          <dd>Solo procesamos lo necesario.</dd>
-          <dt>Alojamiento EU</dt>
-          <dd>Servidores en Europa cuando es posible.</dd>
-          <dt>Auditoría RGPD</dt>
-          <dd>Documentación completa de tratamiento.</dd>
-          <dt>NDA disponible</dt>
-          <dd>Protección de propiedad intelectual.</dd>
-        </dl>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================== 8. FAQ -->
-<section class="section section-alt" id="faq">
-  <div class="wrap wrap-narrow">
-    <header class="section-head">
-      <p class="kicker reveal">05 — Preguntas frecuentes</p>
-      <h2 class="section-title reveal">Lo que suelen preguntarnos</h2>
-    </header>
-
-    <div class="faq">
-      <details class="qa reveal" open>
-        <summary><span>¿Plazos típicos?</span><span class="row-icon" aria-hidden="true"></span></summary>
-        <div class="qa-body"><p>Normalmente se consideran 4–8 semanas para implantar un MVP; no obstante, cada proyecto es único y necesita ser estudiado de forma individual.</p></div>
-      </details>
-      <details class="qa reveal">
-        <summary><span>¿Quién es propietario de los entregables?</span><span class="row-icon" aria-hidden="true"></span></summary>
-        <div class="qa-body"><p>El cliente es propietario del código y configuraciones específicas del proyecto. Las plantillas y librerías base forman parte de nuestro stack y se licencian para su uso en el proyecto.</p></div>
-      </details>
-      <details class="qa reveal">
-        <summary><span>¿Coste orientativo?</span><span class="row-icon" aria-hidden="true"></span></summary>
-        <div class="qa-body"><p>Desde 200 € (tareas puntuales o automatizaciones simples) hasta 20.000 €+ (proyectos a medida con ML e integraciones complejas). Se define tras el diagnóstico.</p></div>
-      </details>
-      <details class="qa reveal">
-        <summary><span>¿El diagnóstico tiene coste?</span><span class="row-icon" aria-hidden="true"></span></summary>
-        <div class="qa-body"><p>La evaluación inicial y la propuesta son gratuitas en la mayoría de los casos. Auditorías avanzadas pueden presupuestarse aparte, siempre previo acuerdo.</p></div>
-      </details>
-    </div>
   </div>
 </section>
 
@@ -570,15 +373,18 @@
       <span>DigitalizaCon<span class="brand-accent">IA</span></span>
     </div>
     <nav class="footer-links" aria-label="Pie de página">
-      <a href="mailto:dani@digitalizaconia.com">dani@digitalizaconia.com</a>
+      <a href="chatbots.html">Chatbots</a>
+      <a href="automatizacion.html">Automatización</a>
+      <a href="analisis-de-datos.html">Datos</a>
+      <a href="metodo.html">Método</a>
       <a href="aviso-legal.html">Aviso legal</a>
-      <a href="privacidad.html">Política de privacidad</a>
+      <a href="privacidad.html">Privacidad</a>
     </nav>
     <p class="footer-copy">© 2026 DigitalizaConIA · Zaragoza &amp; Huesca</p>
   </div>
 </footer>
 
-<script defer src="lib/manifest.js?v=20260803"></script>
-<script defer src="main.js?v=20260803"></script>
+<script defer src="lib/manifest.js?v=20260827"></script>
+<script defer src="main.js?v=20260827"></script>
 </body>
 </html>
