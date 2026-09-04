@@ -1,0 +1,3 @@
+# Vista previa privada. La web real es https://digitalizaconia.com
+User-agent: *
+Disallow: /
