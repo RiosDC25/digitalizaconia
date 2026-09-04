@@ -1176,6 +1176,14 @@ main, .nav, .footer { position: relative; z-index: 2; }
   .whys { grid-template-columns: repeat(2, 1fr); }
 }
 
+/* Con cinco enlaces el menú va justo en el tramo donde aparece.
+   Se aprieta un poco entre 960 y 1120 para que no colisione con el CTA
+   si entra una tipografía de reserva más ancha que Jakarta. */
+@media (min-width: 960px) and (max-width: 1119px) {
+  .nav-links { gap: 1.25rem; }
+  .nav-links a { font-size: .88rem; }
+}
+
 @media (min-width: 1280px) {
   .hero-title { letter-spacing: -.035em; }
   .contact-grid { gap: 6rem; }

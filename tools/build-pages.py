@@ -15,8 +15,9 @@ BASE = "https://digitalizaconia.com"
 EMAIL = "dani@digitalizaconia.com"
 
 NAV = [
+    ("index.html", "Inicio"),
     ("chatbots.html", "Chatbots"),
-    ("automatizacion.html", "Automatización"),
+    ("automatizacion.html", "Automatizaciones"),
     ("analisis-de-datos.html", "Datos"),
     ("metodo.html", "Método"),
 ]
